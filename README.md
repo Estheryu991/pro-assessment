@@ -16,7 +16,7 @@ Please complete the tasks in order, i.e. do not work on task 2 before having com
 
 A corpus is a collection of text segments, each consisting of a single string. On disk, corpora are often stored in line-delimited plain text files containing one segment per line.
 
-Before training NLP models, corpora – often crawled from the web and thus containing noise – must be cleaned. Your task is to implement two cleaning methods: filtering and punctuation normalization. Implement the `filter` and `normalize` methods in `preprocess_corpus.py` according to their docstring specifications. You may use the file stored in `data/corpus.txt` for testing.
+Before training NLP models, corpora – often crawled from the web and thus containing noise – must be cleaned. Your task is to implement two cleaning methods: filtering and punctuation normalization. Implement the `filter` and `normalize` methods in `preprocess_corpus.py` according to their docstring specifications. You may use the file stored in `data/corpus.fr.txt` for testing.
 
 ### Task 2: Use of REST API
 
