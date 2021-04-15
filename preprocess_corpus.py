@@ -14,7 +14,7 @@ class Corpus:
 
     def filter(self, min_alpha: float = 0.5):
         """
-        Discard all segments with too many alphabetical characters.
+        Discard all segments with too few alphabetical characters.
 
         Keep only segments where at least `min_alpha` of the
         characters are alphabetic.
