@@ -1,5 +1,5 @@
 # Coding Assessment
-## TextShuttle Internship 2021
+## Internship Software Engineering at TextShuttle
 
 ### Getting started
 
@@ -9,8 +9,6 @@ manage to complete all tasks.
 Clone this repository and edit any code on your own machine. Once the time is up,
 compress your local repository (with your modified code) into a `.zip` or `.tar.gz`
 archive and send it to furrer@textshuttle.ai.
-
-Please complete the tasks in order, i.e. do not work on task 2 before having completed task 1, etc.
 
 ### Task 1: Corpus Cleaning
 
@@ -22,7 +20,7 @@ Before training NLP models, corpora – often crawled from the web and thus cont
 
 Some NLP models operate on the level of sentences, but a segment in a corpus may contain multiple sentences. Implement the `split` method in `preprocess_corpus.py` to split up such segments into single sentences, as specified in the docstring.
 
-Sentence splitting can be a nasty business. Rather than implementing your own algorithm, use our REST API as described at https://stg.tait.ts.mt/api/v2/docs.
+Sentence splitting can be a nasty business. Rather than implementing your own algorithm, use our REST API as described at https://stg.tait.ts.mt/api/v2/docs (you can ignore the details about authentication as the `/split_sentences` endpoint allows unauthenticated requests).
 
 We recommend using the [`requests` module](https://pypi.org/project/requests/) to communicate with the online service. This module is not part of Python's standard library; you may need to install it.
 
