@@ -1,5 +1,5 @@
 # Coding Assessment
-## Internship Software Engineering at TextShuttle
+## Job Applications at TextShuttle
 
 ### Getting started
 
@@ -8,7 +8,8 @@ manage to complete all tasks.
 
 Clone this repository and edit any code on your own machine. Once the time is up,
 compress your local repository (with your modified code) into a `.zip` or `.tar.gz`
-archive and send it to furrer@textshuttle.ai.
+archive and submit it through [this form](https://forms.gle/3uDh5q7XUPkfV3Hr6) (requires a Google login).
+Alternatively, send the archive as an email attachment to furrer@textshuttle.ai.
 
 ### Task 1: Corpus Cleaning
 
