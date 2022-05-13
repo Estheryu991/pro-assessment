@@ -29,7 +29,32 @@ class Corpus:
 
     def normalize(self):
         """
-        Replace fancy quotes like « » „ “ ” with ASCII quotes (").
+       import unicodedata
+
+    def unicode_character_name(char):
+        try:
+            return unicodedata.name(char)
+        except ValueError:
+            return None
+
+    # Generate all Unicode characters with their names
+    all_unicode_characters = []
+    for n in range(0, 0x10ffff):    # Unicode planes 0-16
+        char = chr(n)               # Python 3
+        #char = unichr(n)           # Python 2
+        name = unicode_character_name(char)
+        if name:
+            all_unicode_characters.append((char, name))
+
+    # Find all Unicode quotation marks
+    print (' '.join([char for char, name in all_unicode_characters if 'QUOTATION MARK' in name]))
+    # " « » ‘ ’ ‚ ‛ “ ” „ ‟ ‹ › ❛ ❜ ❝ ❞ ❟ ❠ ❮ ❯ ⹂ 〝 〞 〟 ＂ 🙶 🙷 🙸
+
+    #  
+    # Find all Unicode dashes
+    print (' '.join([char for char, name in all_unicode_characters if 'DASH' in name and 'DASHED' not in name]))
+    # ‒ – — ⁓ ⊝ ⑈ ┄ ┅ ┆ ┇ ┈ ┉ ┊ ┋ ╌ ╍ ╎ ╏ ⤌ ⤍ ⤎ ⤏ ⤐ ⥪ ⥫ ⥬ ⥭ ⩜ ⩝ ⫘ ⫦ ⬷ ⸺ ⸻ ⹃ 〜 〰 ︱ ︲ ﹘ 💨
+
         """
         pass  # TODO: Task 1
 
@@ -43,6 +68,7 @@ class Corpus:
             After:  self.segments = ["Wie geht's?", "Ausgezeichnet.", "Und dir?"]
         """
         pass  # TODO: Task 2
+    
 
 
 # TODO: Task 3
